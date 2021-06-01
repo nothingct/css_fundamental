@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /*selector 로 잘 원하는 애들 뽑아오기 */
+        /*
+        .container{
+            background-color: aquamarine;
+        }
+        */
+        /*container 클래스 의 자손 중에서 p 요소 선택 */
+        /*
+        .container p {
+            background-color: bisque;
+        }
+        */
+        /*container 클래스의 자식 중에서 p 요소 선택*/
+        /*
+        .container>p {
+            background-color: wheat;
+        }
+        */
+        /* 형제 : 자신 기준으로 밑에 있는 애들만 형제야 */
+        /*container 클래스의 형제 중에 바로 인접한 (밑에만 쳐줌 위는 안해줌)P*/
+        /*
+        .container+p{
+            background-color: tomato;
+        }
+        */
+        /*.container~p : container 클래스의 형제들 중 모든 p 요소들 */
+        
+        .container~p{
+            background-color: turquoise;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class= "container">
+        <p>Sed at metus quis ex pulvinar mattis sed a urna1.</p>
+        <div>
+            <p>Sed at metus quis ex pulvinar mattis sed a urna.2</p>
+        </div>
+    </div>
+    <p>Sed at metus quis ex pulvinar mattis sed a urna3.</p>
+    <p>Sed at metus quis ex pulvinar mattis sed a urna4.</p>
+    <p>Sed at metus quis ex pulvinar mattis sed a urna5.</p>
+    <p>Sed at metus quis ex pulvinar mattis sed a urna6.</p>    
+</body>
+</html>

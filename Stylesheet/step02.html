@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* element selector */
+        div
+        {
+            border : 1px dotted green; /* width style color 순서*/
+        }
+        /*class selector*/
+        /*Element.class : Element이면서 class인 경우 적용*/
+        div.bg-yellow
+        {
+            background-color: yellow;
+        }
+        p.bg-yellow{
+            background-color: yellowgreen;
+        }
+        /*id selector */
+        #myDiv
+        {
+            color : blue;
+        }
+        /* class가 test 이면서 test1 인 경우 적용 */
+        .test.bg-yellow{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>div1</div>
+    <div class= "bg-yellow">div1</div>
+    <div class= "bg-yellow">div1</div>
+    <div class= "bg-yellow test">div1</div>
+    <p class= "bg-yellow">p</p>
+    <div id= "myDiv">div1</div>
+
+</body>
+</html>
